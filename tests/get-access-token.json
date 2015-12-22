@@ -1,0 +1,20 @@
+{
+  "machine": "get-access-token",
+  "expectations": [
+    {
+      "using": {},
+      "outcome": "error"
+    },
+    {
+      "using": {
+        "consumerKey": "key",
+        "consumerSecret": "secret",
+        "username": "username",
+        "password": "password"
+      },
+      "outcome": "error",
+      "returns": 401
+    }
+  ]
+}
+

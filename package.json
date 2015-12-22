@@ -1,0 +1,40 @@
+{
+  "name": "machinepack-instapaper",
+  "version": "0.0.0",
+  "description": "Communicate with the Instapaper API to grab bookmarks for a user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jeffjewiss/machinepack-instapaper.git"
+  },
+  "keywords": [
+    "machines",
+    "machinepack",
+    "Instapaper",
+    "Instapaper API"
+  ],
+  "machinepack": {
+    "friendlyName": "Instapaper",
+    "machineDir": "machines/",
+    "iconSrc": "",
+    "machines": [
+      "get-access-token",
+      "get-user-bookmarks",
+      "get-user-folders"
+    ],
+    "testsUrl": "https://travis-ci.org/jeffjewiss/machinepack-instapaper"
+  },
+  "author": "Jeff Jewiss<jeff@jeffjewiss.com>",
+  "license": "MIT",
+  "dependencies": {
+    "machine": "11.0.3",
+    "querystring": "0.2.0",
+    "request": "2.67.0"
+  },
+  "devDependencies": {
+    "test-machinepack-mocha": "^2.1.1"
+  }
+}
